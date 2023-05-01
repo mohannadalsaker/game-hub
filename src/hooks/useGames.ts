@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import apiClients, {CanceledError} from "../services/api.clients";
 
 
-interface Game {
+export interface Game {
     id: number;
     name: string;
+    background_image: string;
   }
   
   interface FetchGamesResponse {
